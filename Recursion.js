@@ -5,8 +5,7 @@ let isEven = function checkEven(num) {
         }else if(num-2==1){
             output = "false"
         }else{
-            num = num-2;
-            isEven(num)
+            isEven(num-2)
         }
     }else if(num == 0){
         output="true"
