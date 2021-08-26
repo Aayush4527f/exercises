@@ -1,4 +1,4 @@
-isEven = function checkEven(num) {
+let isEven = function checkEven(num) {
     if(Math.sign(num)==1){
         if(num-2==0){
             output="true"
@@ -8,7 +8,10 @@ isEven = function checkEven(num) {
             num = num-2;
             isEven(num)
         }
-    }else{
+    }else if(num == 0){
+        output="true"
+    }
+    else{
         output = "??"
     }
     return output
