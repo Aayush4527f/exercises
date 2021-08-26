@@ -7,9 +7,9 @@ function partition(array, low, high)   {
             let temp = array[i];
             arr[i] = arr[j];
             arr[j] = temp;
+            console.log("pivot=",pivot, "array[j]", array[j], "array[i]",array[i], array);
         }
     }
-    console.log(`p=${i}`, array);
     return i;
 }
 
@@ -24,5 +24,5 @@ function quicksort(array, lo, hi)   {
 }
 
 let arr = [8, 9, 1, 2, 7, 4];
+console.log(arr);
 quicksort(arr, 0, arr.length - 1);
-
